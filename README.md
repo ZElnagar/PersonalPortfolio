@@ -1,10 +1,11 @@
-#Personal Portfolio
+              Personal Portfolio
+
 This is a personal portfolio website built using HTML and CSS. It showcases my skills, education, work experience, and projects as a Software Engineering student.
 
-About
+                  About:
 The portfolio provides an overview of my professional journey, including education, work experience, and a showcase of projects I have worked on. It also features a contact section for networking opportunities.
 
-Features
+                 Features
 Responsive Design: Adaptable to various screen sizes for an optimal user experience.
 Navigation Bar: Smooth scrolling navigation for easy access to different sections.
 Work Experience Timeline: A visually appealing timeline layout to display my professional experience.
