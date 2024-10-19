@@ -6,6 +6,9 @@
     text-decoration: none;
     list-style: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 .header{
     position: fixed;
     top: 0;
@@ -313,3 +316,4 @@ span{
     font-size: 12px;
     color: white;
 }
+
