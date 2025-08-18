@@ -173,7 +173,7 @@ span{
 }
 .WorkExperienceSection h2{
     text-align: center;
-    margin-top: 1em;
+    margin-top: 3em;
     margin-bottom: 1em;
     font-size: 36px;
 
@@ -253,6 +253,7 @@ span{
     resize: none;
 }
 .footer{
+    margin-top: 3em;
     position: relative;
     bottom: 0;
     width: 100%;
