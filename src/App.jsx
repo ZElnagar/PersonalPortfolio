@@ -1,18 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Home } from "./pages/Home"
-import { NotFound } from "./pages/NotFound"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
 
 function App() {
-
   return (
-    <><BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />   {/* default route */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter></>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
-
+export default App;
