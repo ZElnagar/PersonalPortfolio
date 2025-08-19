@@ -1,13 +1,12 @@
+// vite.config.(js|ts)
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
-  base: "/PersonalPortfolio",
+  base: "/PersonalPortfolio/",          // <-- trailing slash!
   build: { outDir: "docs" },
   plugins: [react(), tailwindcss()],
-  resolve: {
-    alias: { '@': path.resolve(__dirname, './src') }
-  },
+  resolve: { alias: { '@': path.resolve(__dirname, './src') } },
 })
