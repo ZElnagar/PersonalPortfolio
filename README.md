@@ -1,21 +1,12 @@
-      Personal Portfolio
+# React + Vite
 
-This is a personal portfolio website built using HTML and CSS. It showcases my skills, education, work experience, and projects as a Software Engineering student.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-      About:
-The portfolio provides an overview of my professional journey, including education, work experience, and a showcase of projects I have worked on. It also features a contact section for networking opportunities.
+Currently, two official plugins are available:
 
-      Features
-- Responsive Design: Adaptable to various screen sizes for an optimal user experience.
-- Navigation Bar: Smooth scrolling navigation for easy access to different sections.
-- Work Experience Timeline: A visually appealing timeline layout to display my professional experience.
-- Contact Form: A basic form for visitors to get in touch.
-- Social Media Links: Direct links to my LinkedIn, GitHub, and other platforms.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-      Technologies Used:
-HTML5: Structure and content of the website.
-CSS3: Styling and layout.
+## Expanding the ESLint configuration
 
-      Usage:
-This website is designed to present my personal and professional information. Browse through different sections to learn more about me and view my work.
-Feel free to add or modify any sections as needed!
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
