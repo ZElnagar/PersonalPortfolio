@@ -5,7 +5,7 @@ const projects = [
         id: 1,
         title: "Western Formula Website",
         description: "A beautiful landing page using React and Tailwind for the western formula racing team.",
-        image: "/projects/project1.png",
+        image: "/projects/Project1.png",
         tags: ["React", "TailwindCSS"],
         demoUrl: "https://westernformularacing.org/",
         githubUrl: "https://github.com/Western-Formula-Racing/wfrwebsite",
