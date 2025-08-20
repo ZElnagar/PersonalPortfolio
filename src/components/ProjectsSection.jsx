@@ -17,7 +17,7 @@ const projects = [
         image: "/projects/Project2.png",
         tags: ["Unity", "C#"],
         demoUrl: "https://alexandralheureuxece.github.io/final-project-citadelbreak/",
-        githubUrl: "https://github.com/Western-Formula-Racing/wfrwebsite",
+        githubUrl: "https://github.com/AlexandraLHeureuxECE/final-project-citadelbreak",
     },
 ];
 
