@@ -14,7 +14,7 @@ export const AboutSection = () => {
                         <h3 className="text-2xl font-semibold">Passionate Web Developer</h3>
 
                         <p className="text-muted-foreground">
-                            With over 4 years of experience in web development, I specialize in creating
+                            With over 2 years of experience, I specialize in creating
                             responsive, accessible, and sleek web applications using modern technologies.
                         </p>
 
@@ -47,7 +47,7 @@ export const AboutSection = () => {
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">Web development</h4>
                                     <p className="text-muted-foreground">
-                                        Creating Responsive Websites and web applications with modern frameworks.
+                                        Developed responsive websites and web apps using modern frameworks to ensure performance across all devices.
                                     </p>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@ export const AboutSection = () => {
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">UI/UX Design</h4>
                                     <p className="text-muted-foreground">
-                                        Designing intiuitive user interfaces and seamless user experiences.
+                                        Designing intiuitive user interfaces and seamless user experiences that enhance usability and engagement.
                                     </p>
                                 </div>
                             </div>
@@ -71,10 +71,9 @@ export const AboutSection = () => {
                                     <Briefcase className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Project Management</h4>
+                                    <h4 className="font-semibold text-lg">Workshop Management</h4>
                                     <p className="text-muted-foreground">
-                                        Leading Projects from conception to completion with agile methedologies.
-                                        {/* Can talk about workshop stuff here */}
+                                        Designed and led hands-on Python workshops, teaching others how to apply AI concepts and build practical machine learning solutions.
                                     </p>
                                 </div>
                             </div>

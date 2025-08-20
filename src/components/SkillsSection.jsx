@@ -1,4 +1,4 @@
-import { act, useState } from "react";
+import { useState } from "react";
 import { cn } from '@/lib/utils';
 
 const skills = [
@@ -51,7 +51,7 @@ export const SkillsSection = () => {
                                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                                 activeCategory === category
                                     ? "bg-primary text-primary-foreground"
-                                    : "bg-secondary/70 text-foreground hover:bd-secondary"
+                                    : "bg-secondary/70 text-foreground hover:bg-secondary"
                             )}
                         >
                             {category}
