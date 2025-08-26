@@ -19,6 +19,15 @@ const projects = [
         demoUrl: "https://alexandralheureuxece.github.io/final-project-citadelbreak/",
         githubUrl: "https://github.com/AlexandraLHeureuxECE/final-project-citadelbreak",
     },
+    {
+        id: 3,
+        title: "Resumind",
+        description: "An AI Resume Reviewer and Feedback Website.",
+        image: "/projects/Project3.png",
+        tags: ["React", "TailWind CSS", "TypeScript"],
+        demoUrl: "https://puter.com/app/ai-resume-analyzer-104",
+        githubUrl: "https://github.com/ZElnagar/ai-resume-analyzer",
+    },
 ];
 
 export const ProjectsSection = () => {
