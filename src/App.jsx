@@ -4,7 +4,7 @@ import { NotFound } from "./pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />   {/* default route */}
         <Route path="*" element={<NotFound />} />
