@@ -70,7 +70,7 @@ export const ContactSection = () => {
                                     className="text-muted-foreground hover:text-primary transition-colors"
                                     href="https://www.linkedin.com/in/elnagarziad/"
                                 >
-                                    Ziad Elngar
+                                    Ziad Elnagar
                                 </a>
                             </div>
                         </div>
