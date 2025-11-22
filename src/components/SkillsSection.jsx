@@ -21,7 +21,11 @@ const skillLogos = [
 const marqueeSkills = [...skillLogos, ...skillLogos];
 
 const SkillBadge = ({ name, type, logo }) => (
+<<<<<<< HEAD
     <div className="flex min-w-[190px] items-center gap-3 rounded-2xl border border-border/50 bg-card/90 px-5 py-3 shadow-xs backdrop-blur-sm card-hover">
+=======
+    <div className="flex min-w-[200px] items-center gap-4 rounded-xl border border-border/50 bg-card/80 px-6 py-4 shadow-sm backdrop-blur-sm card-hover">
+>>>>>>> temp-save
         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary/60 p-2">
             <img
                 src={logo}
@@ -32,8 +36,13 @@ const SkillBadge = ({ name, type, logo }) => (
             />
         </div>
         <div className="text-left">
+<<<<<<< HEAD
             <p className="text-sm font-semibold">{name}</p>
             <p className="text-xs text-muted-foreground">{type}</p>
+=======
+            <p className="text-base font-semibold tracking-tight">{name}</p>
+            <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide">{type}</p>
+>>>>>>> temp-save
         </div>
     </div>
 );
@@ -57,6 +66,7 @@ export const SkillsSection = () => {
                 </p>
             </div>
 
+<<<<<<< HEAD
             <div className="relative">
                 <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-secondary/30 via-secondary/10 to-transparent" />
                 <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-secondary/30 via-secondary/10 to-transparent" />
@@ -74,6 +84,29 @@ export const SkillsSection = () => {
                         {marqueeSkills.map((skill, index) => (
                             <SkillBadge key={`secondary-${index}-${skill.name}`} {...skill} />
                         ))}
+=======
+            <div className="relative w-full">
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background via-background/80 to-transparent z-10" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background via-background/80 to-transparent z-10" />
+
+                <div className="flex flex-col gap-8 py-8">
+                    {/* First Row - Left to Right */}
+                    <div className="flex overflow-hidden">
+                        <div className="skills-marquee flex items-center gap-6">
+                            {marqueeSkills.map((skill, index) => (
+                                <SkillBadge key={`row1-${index}-${skill.name}`} {...skill} />
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Second Row - Right to Left */}
+                    <div className="flex overflow-hidden">
+                        <div className="skills-marquee skills-marquee-reverse flex items-center gap-6">
+                            {marqueeSkills.map((skill, index) => (
+                                <SkillBadge key={`row2-${index}-${skill.name}`} {...skill} />
+                            ))}
+                        </div>
+>>>>>>> temp-save
                     </div>
                 </div>
             </div>
