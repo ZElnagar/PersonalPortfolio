@@ -172,9 +172,25 @@
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
-#root {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
+@utility skills-marquee {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  min-width: max-content;
+  animation: skills-marquee 56s linear infinite;
+}
+
+@utility skills-marquee-reverse {
+  animation-direction: reverse;
+  animation-duration: 64s;
+}
+
+@keyframes skills-marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }

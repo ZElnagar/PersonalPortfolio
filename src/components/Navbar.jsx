@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
     { name: "Home", href: "#hero" },
@@ -30,15 +31,20 @@ export const Navbar = () => {
             )}
         >
             <div className="container flex items-center justify-between">
-                <a
-                    className="text-xl font-bold text-primary flex items-center"
-                    href="#hero"
-                >
-                    <span className="relative z-10">
-                        <span className="text-glow text-foreground"> ZiadElnagar </span>{" "}
-                        Portfolio
-                    </span>
-                </a>
+                <div className="flex items-center gap-4">
+                    <a
+                        className="text-xl font-bold text-primary flex items-center"
+                        href="#hero"
+                    >
+                        <span className="relative z-10">
+                            <span className="text-glow text-foreground"> ZiadElnagar </span>{" "}
+                            Portfolio
+                        </span>
+                    </a>
+                    <div className="hidden md:block">
+                         <ThemeToggle />
+                    </div>
+                </div>
 
                 {/* desktop nav */}
                 <div className="hidden md:flex space-x-8">
@@ -55,13 +61,16 @@ export const Navbar = () => {
 
                 {/* mobile nav */}
 
-                <button
-                    onClick={() => setIsMenuOpen((prev) => !prev)}
-                    className="md:hidden p-2 text-foreground z-50"
-                    aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-                >
-                    {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
-                </button>
+                <div className="flex items-center gap-2 md:hidden">
+                     <ThemeToggle />
+                    <button
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                        className="p-2 text-foreground z-50"
+                        aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+                    >
+                        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+                    </button>
+                </div>
 
                 <div
                     className={cn(
