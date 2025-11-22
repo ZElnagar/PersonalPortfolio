@@ -185,39 +185,12 @@
 @utility skills-marquee {
   display: inline-flex;
   align-items: center;
-<<<<<<< HEAD
-  gap: 2rem;
-  min-width: max-content;
-  animation: skills-marquee 64s linear infinite;
-=======
   gap: 1.5rem;
   min-width: max-content;
   animation: skills-marquee 56s linear infinite;
->>>>>>> temp-save
 }
 
 @utility skills-marquee-reverse {
   animation-direction: reverse;
-<<<<<<< HEAD
-  animation-duration: 76s;
-}
-
-#root {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-=======
   animation-duration: 64s;
-}
-
-@keyframes skills-marquee {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
->>>>>>> temp-save
 }
