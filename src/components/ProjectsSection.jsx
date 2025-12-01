@@ -1,5 +1,6 @@
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
+
 const projects = [
     {
         id: 1,
@@ -24,11 +25,21 @@ const projects = [
         title: "Resumind",
         description: "An AI Resume Reviewer and Feedback Website.",
         image: "projects/Project3.png",
-        tags: ["React", "TailWind CSS", "TypeScript"],
+        tags: ["React", "TailWind CSS", "TypeScript", "Gemini API"],
         demoUrl: "https://puter.com/app/ai-resume-analyzer-104",
         githubUrl: "https://github.com/ZElnagar/ai-resume-analyzer",
     },
+    {
+        id: 4,
+        title: "NutriScan",
+        description: "A Hackathon-winning AI health analyzer that turns a facial scan into personalized nutrition guidance.",
+        image: "projects/Project4.png",
+        tags: ["React", "TailWind CSS", "TypeScript", "Gemini API"],
+        demoUrl: "https://nutriscans.tech/",
+        githubUrl: "https://github.com/ZElnagar/HackWestern12",
+    },
 ];
+
 
 export const ProjectsSection = () => {
     return <section id="projects" className="py-24 px-4 relative">
@@ -37,19 +48,21 @@ export const ProjectsSection = () => {
                 Featured <span className="text-primary"> Projects </span>
             </h2>
 
+
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                 Here are some of my recent projects, feel free to visit the demo github repos for each!
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {projects.map((project, key) => (
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                {[...projects].reverse().map((project, key) => (
                     <div
                         key={key}
                         className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
                     >
                         <div className="h-48 overflow-hidden">
                             <img
-                                src={project.image}
+                                src={`${import.meta.env.BASE_URL}${project.image}`}
                                 alt={project.title}
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
@@ -93,6 +106,7 @@ export const ProjectsSection = () => {
                     </div>
                 ))}
             </div>
+
 
             <div className="text-center mt-12">
                 <a
